@@ -18,4 +18,5 @@ Jekyll, Tom Preston-Werner tarafından diğer blog platformlarının kompleksli�
 Hikayesini [Blogging like a hacker](http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html) başlıklı yazısından okuyabilrsiniz. Jekyll, markdown formatında yazılan içeriği, oluşturulmuş templatelerle birleştirerek sonucunda statik bir Html sitesine çeviriyor.
 
 ###Github Pages nedir?
+Github geliştiricilerin kodlarını depoladıkları bir platform. Github Pages ile de bu projelerin canlı birer web sayfası oluşturulup, ücretsiz bir şekilde github sunucularında host edilebiliyor. Github pages ile kullanıcı/organizasyon sayfası ve proje sayfası olmak üzere iki tip sayfa oluşturulabiliyor. Bu sayfalar github.io domainlerinden ya da istenirse custom domainlerden de sunulabiliyor.
 
