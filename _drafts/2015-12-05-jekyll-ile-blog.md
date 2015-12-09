@@ -21,7 +21,9 @@ Hikayesini [Blogging like a hacker](http://tom.preston-werner.com/2008/11/17/blo
 Github geliştiricilerin kodlarını depoladıkları bir platform. Github Pages ile de bu projelerin canlı birer web sayfası oluşturulup, ücretsiz bir şekilde github sunucularında host edilebiliyor. Github pages ile kullanıcı/organizasyon sayfası ve proje sayfası olmak üzere iki tip sayfa oluşturulabiliyor. Bu sayfalar github.io domainlerinden ya da istenirse custom domainlerden de sunulabiliyor.
 
 ###Blogu oluşturalım
-Yapmamız gereken ilk şey yeni bir repository oluşyturup, bu repoya KULLANICI_ADINIZ.github.io ismini vermek. Sonrasında oluşan repository'yi kendi bilgisayarımıza clone'lamamız gerekmekte.
+<div class="highlight">
+**Jekyll için çoğu ücretsiz bir çok tema bulunuyor. Ben de bu bloğu [Minimal Mistakes](http://mmistakes.github.io/) temasıyla oluşturdum. Bundan sonraki yönergelerden, bu temanın kullanıldığını varsayarak bahsedeceğim. Çoğu temanın kurulum süreci benzerdir ve kendi sayfalarında bir kurulum rehberi bulunmaktadır.**
+</div>
 
 
 
