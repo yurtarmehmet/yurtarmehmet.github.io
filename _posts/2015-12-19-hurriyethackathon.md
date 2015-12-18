@@ -1,44 +1,46 @@
 ---
 layout: post
-title: "Hürriyet Hackaton Emlak Serüvenimiz"
-excerpt: "Optistate projesiyle 2. olmaya layık görüldüğümüz hürriyet hackaton serüvenimiz"
-tags: [hürriyet, hackaton, emlak, koç kuluçka, koç incubation]
+title: "Hürriyet Hackathon Emlak Serüvenimiz"
+excerpt: "Optistate projesiyle 2. olmaya layık görüldüğümüz hürriyet hackathon serüvenimiz"
+tags: [hürriyet, hackathon, emlak, koç kuluçka, koç incubation]
 comments: true
 image:
-  feature: jekyll.jpg
+  feature: hurriyet.jpg
 ---
 
-12-13 Aralık'da katıldığımız Hackaton, bizim için unutamayacağımız bir deneyim oldu. Bu güzel organizasyon için Hürriyet'e ve Koç Kuluçka'ya 
+12-13 Aralık'da katıldığımız hackathon, bizim için unutamayacağımız bir deneyim oldu. Bu güzel organizasyon için Hürriyet'e ve Koç Kuluçka'ya 
 teşekkür ediyorum ve hemen serüvenimizi paylaşmaya koyuluyorum :)
 
 ###Ekibimiz 
-Hackaton'a katılım için ilk adımı ben attım. Sonuç olarak ise frontend tarafında bendenizin, backend tarafında ofisten arkadaşım, .NET Developer Sercan Dumansız'ın, business ve sunum tarafında da
-okuldan ve YTÜ Girişimcilik Kulübü'nden arkadaşım Serdar Kuvaz'ın olduğu güzel bir ekip oluşturduk. Bu ekip ilk kez bir hackatona katılıcaktı ve heyecanlıydık. UI Developer olarak çalışan ben ve, .NET tarafında olmasına rağmen Javascript'in cazibesine daha fazla karşı koyamayan Sercan, bir süredir ReactJs konusunda kendimizi geliştirmeye çalışıyoruz.
-Buradan hareketle hackatonda ReactJS yazmaya karar verdik ve ekibimizin adını "Reactors" olarak koyduk. (Ancak hackataon'da React yazmak nasip olmadı :) Tech Stack'imizden aşağıda detaylıca bahsedeceğim.)
+hackathon'a katılım için ilk adımı ben attım. Sonuç olarak ise frontend tarafında bendenizin, backend tarafında ofisten arkadaşım, .NET Developer Sercan Dumansız'ın, business ve sunum tarafında da
+okuldan ve YTÜ Girişimcilik Kulübü'nden arkadaşım Serdar Kuvaz'ın olduğu güzel bir ekip oluşturduk. Bu ekip ilk kez bir hackathona katılıcaktı ve heyecanlıydık. UI Developer olarak çalışan ben ve, .NET tarafında olmasına rağmen Javascript'in cazibesine daha fazla karşı koyamayan Sercan, bir süredir ReactJs konusunda kendimizi geliştirmeye çalışıyoruz.
+Buradan hareketle hackathonda ReactJS yazmaya karar verdik ve ekibimizin adını "Reactors" olarak koyduk. (Ancak hackataon'da React yazmak nasip olmadı :) Tech Stack'imizden aşağıda detaylıca bahsedeceğim.)
 
 ###Fikrimiz ve geldiği aşama
 Başvurular yapıldı ve 8 Aralık Günü kabul edildiğimize dair bir mail aldık. O ana kadar ne yapacağımız hakkında hiçbir fikrimiz yoktu. O gün açıkçası biraz "tutuştuk" ve hemen biraraya geldik. Sercan'la konuştuğumuzda onun "akıllı emlak" olarak
-nitelendirdiği projeyi hackaton'da gerçekleştirmeye karar verdik. Bahsedecek olursam; kullanıcılardan gelir düzeyi, işyeri konumu, hanedeki bakıma muhtaç insan olup olmadığı, evcil hayvan sahibi olup olmadığı bilgilerini
+nitelendirdiği projeyi hackathon'da gerçekleştirmeye karar verdik. Bahsedecek olursam; kullanıcılardan gelir düzeyi, işyeri konumu, hanedeki bakıma muhtaç insan olup olmadığı, evcil hayvan sahibi olup olmadığı bilgilerini
 bir form aracılığıyla alacak; foursquare,instagram,facebook vb. platformlardaki check-inlerinden de takıldığı mekanlara göre bir profil çıkaracaktık. Bu aşamada insanların ev ararken belli öncelikleri olduğu aklımza geldi.
-Bu öncelikleri sıralayarak recommendation sistemimizi buna göre oluşturduk. Sistemimize göre ev seçerken insanların önceliklerinin aşağıdaki tabodaki gibi olduğuna karar verdik. 
+Bu öncelikleri sıralayarak recommendation sistemimizi buna göre oluşturduk. Sistemimize göre ev seçerken insanların önceliklerinin aşağıdaki tabodaki gibi olduğuna karar verdik.
+
+<img src="../images/optitable.jpg"/> 
 
 Bu aşamadan sonra aklımıza, kişiye kira için verebiliceği fiyat aralığını da önermek geldi. Finans konusunda iyi olan Serdar, okumalarından elde ettiği bir bilgiyi bizimle paylaştı,
 "OECD verilerine göre bir kişini kiraya ödediği miktar gelirinin 1/4 ü kadardır." Serdar ve ben YTÜ Matematik bölümü öğrencileriyiz. Okulda edindiğimiz bazı optimizasyon tekniklerini, matematiksel modellemeleri de sistemimize entegre etmeye çalıştık.
-Artık ne yapacağımızı biliyorduk. Projemizin ismini hackaton sırasında koyduk; bizim yaptığımız ilanları kişiye göre optimize etmekti ve projemizin adı da "OPTISTATE" oldu.
+Artık ne yapacağımızı biliyorduk. Projemizin ismini hackathon sırasında koyduk; bizim yaptığımız ilanları kişiye göre optimize etmekti ve projemizin adı da "OPTISTATE" oldu.
 
 ##Tech Stack !
 Yukarıda bahsettiğim gibi ekibimizin adı "Reactors" olmasına rağmen ReactJs yazmadık. Yeni öğrenmeye başladğımız bi teknolojiyi burada kullanmak pek kafamıza yatmadı. Kendimizi pek "confident" hissemiyorduk açıkcası.
-Daha sonra bir backend servis yazmanın da hackaton için hızlı bir prototip çıkarmaya engel olacağını düşündük. Sonuç olarak "backend as a service" olarak kategorienirilen Facebook'ın Parse'ını kullandık.
+Daha sonra bir backend servis yazmanın da hackathon için hızlı bir prototip çıkarmaya engel olacağını düşündük. Sonuç olarak "backend as a service" olarak kategorienirilen Facebook'ın Parse'ını kullandık.
 Javascript SDK'sı BackboneJs forkunun üstüne geliştirmeler yaparak oluşturulmuş, yeni bir projeye başlamak ya da mevcut BackboneJs projesini Parse'a entegre etmek oldukça kolay.
 
 ##42 Saat nasıl geçti?
-Hackaton bildiğiniz üzere Koç Kuluçka'da gerçekleşiyordu. Cuma akşamı gittiğimizde AppAnalytics'in ofisinde kendimize yer bulabildik. Çalışabileceğimiz bir tahtamız bile oldu. (Bu konuda çok şanslıydık.) Hemen her saat yiyecek-içecek bişeylerimiz vardı. Organizasyonel olarak kusursuz bir hackaton oldu. 42 saaat boyunca toplamda 5 saat kadar "şöyle bir kestirme" imkanım oldu. Mentorlar ekipleri dolaşıp projeler hakkında fikir edindi.
+hackathon bildiğiniz üzere Koç Kuluçka'da gerçekleşiyordu. Cuma akşamı gittiğimizde AppAnalytics'in ofisinde kendimize yer bulabildik. Çalışabileceğimiz bir tahtamız bile oldu. (Bu konuda çok şanslıydık.) Hemen her saat yiyecek-içecek bişeylerimiz vardı. Organizasyonel olarak kusursuz bir hackathon oldu. 42 saaat boyunca toplamda 5 saat kadar "şöyle bir kestirme" imkanım oldu. Mentorlar ekipleri dolaşıp projeler hakkında fikir edindi.
 
 ##Sonuç
 42 saatin sonunda ilk önce projeler 16-16 ayrılıp ilk aşama sunumlarını yaptılar. Buradan 9 proje seçildi ve bu sefer tek bir salonda, katılımcıların da oy verebildiği bir sunum aşamasına geçildi. Biz de ikinci kez sunumumuzu yaptık. Projemiz katılımcıların oylamaları ve jüri değerlendirilmesi sonucunda 2. oldu.
 
 ##Diğer Projeler Hakkında Yorumlarım
-Burada tek kelime söylemem gerekse bu "harika" olurdu. Hackaton süresince sürekli diyalog halinde olduğumuz ekipler gerçekten mükemmel işler çıkardı. 1. olan "Kaça Gider", emlakların lokasyona göre değerlemelerini tahmin eden bir uygulamaydı. 3.olan Arca, bizim projemize çok benzer bir mantıkla çalışıyordu. Sonuç olarak kazanan projelere baktığımıza belki bir sonuca ulaşabiliriz.
+Burada tek kelime söylemem gerekse bu "harika" olurdu. hackathon süresince sürekli diyalog halinde olduğumuz ekipler gerçekten mükemmel işler çıkardı. 1. olan "Kaça Gider", emlakların lokasyona göre değerlemelerini tahmin eden bir uygulamaydı. 3.olan Arca, bizim projemize çok benzer bir mantıkla çalışıyordu. Sonuç olarak kazanan projelere baktığımıza belki bir sonuca ulaşabiliriz.
 
 <blockquote class="twitter-tweet" lang="en-gb"><p lang="tr" dir="ltr"><a href="https://twitter.com/hashtag/hackedenkazansin?src=hash">#hackedenkazansin</a> <a href="https://twitter.com/hashtag/HurriyetHackathon?src=hash">#HurriyetHackathon</a> ilk 3&#39;e (linear regression) prediction ve analiz uygulamaları girdi. Boş işler değil, sevdik, saydık!</p>&mdash; Gurel Kaynak (@gurelkaynak) <a href="https://twitter.com/gurelkaynak/status/676425637305974784">December 14, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -46,12 +48,15 @@ Burada tek kelime söylemem gerekse bu "harika" olurdu. Hackaton süresince sür
 Bunların dışında da çok süper işler gördük. Şahsi favorim sanal gerçeklik gözlüğüyle ev dolaşma imkanı sağlayan "DevTeen" ekibiydi. Bir diğer favorim Barış Güler, Gürel Kaynak ve Barbaros Yıldırım'dan oluşan Tacchinardi ekibi. pathtoestate projeleriyle, Tech Stacklarinden detaylarıyla bahseden tek ekip olduğunu söyleyebilirim. Ve bu tech stack öyle bir şeydi ki dinlediğimizde resmen gönül tellerimiz titredi. :) Öyle ki ciddi ölçüde bir code review olsa bu ekibe karşı koyabilecek bir ekip çıkabileceğini hiç sanmam. Bunun dışında semizotu ekibi projelerini github üstünde açık kaynak geliştirmeleriyle sanıyorum herkesin takdirini kazandı.
 
 ##Gelir Modeli (WTF?)
-Son zamanlarda Türkiye'de hackatonlar başka mevzularla gündeme geldi. Özellikle bankaların ev sahipliği yaptığı hackatonlar, kodların yarıştığı bir yarışmadan, gelir ve iş modellerinin sorgulandığı bir startup yarışması haline geldi. Hürriyet hackaton'da böyle bir şey yaşamadık. Jüri ne bize ne de başka bir ekibe, "gelir modeliniz nedir" gibi garip bir soru sormadı. (Sormuş olsa dahi değerlendirme kriteri olduğunu düşünmüyorum.) Ancak projelerde uygulanabilirlik ve kar elde etme amacını göz önüne alanarak değerlendirme yaptıkları söylenebilir. He bu arada ben yine de bir gelir modeli oluşturdum aşağıda paylaşayım (İĞRENÇ ESPRİ ALERT)
+Son zamanlarda Türkiye'de hackathonlar başka mevzularla gündeme geldi. Özellikle bankaların ev sahipliği yaptığı hackathonlar, kodların yarıştığı bir yarışmadan, gelir ve iş modellerinin sorgulandığı bir startup yarışması haline geldi. Hürriyet hackathon'da böyle bir şey yaşamadık. Jüri ne bize ne de başka bir ekibe, "gelir modeliniz nedir" gibi garip bir soru sormadı. (Sormuş olsa dahi değerlendirme kriteri olduğunu düşünmüyorum.) Ancak projelerde uygulanabilirlik ve kar elde etme amacını göz önüne alanarak değerlendirme yaptıkları söylenebilir. He bu arada ben yine de bir gelir modeli oluşturdum aşağıda paylaşayım (İĞRENÇ ESPRİ ALERT)
 
+
+{% highlight javascript %}
 var gelir = Backbone.Model.extend({
-
+    ...
 });
+{% endhighlight %}
 
-Bu arada başka bir duyuru yaparak yazıyı tamamlayayım. Packathon'u sabırsızlıkla bekliyorum. Orada gelir modeli diyeni dövüyorlarmış :)
+Bu arada başka bir duyuru yaparak yazıyı tamamlayayım. [Packathon](http://packathon.org/)'u sabırsızlıkla bekliyorum. Orada gelir modeli diyeni dövüyorlarmış :)
 
 
