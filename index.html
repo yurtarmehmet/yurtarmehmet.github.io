@@ -23,6 +23,8 @@
     $zoho.salesiq.ready = function (embedinfo) {
         $zoho.salesiq.visitor.customaction("startCustomChat");
         $zoho.salesiq.visitor.trigger(function (triggername, visitorinfo) {
+            console.log(visitorinfo);
+            console.log(triggername); 
             if (triggername == 'startChatNew') {
                 // Chat başlat new visitor mail ve provider
                 console.log("Start Chat with new visitor")
