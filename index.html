@@ -23,6 +23,21 @@ var $zoho= $zoho || {salesiq:{values:{},ready:function(){}}};var d=document;s=d.
 s.defer=true;s.src="https://salesiq.zoho.com/mehmetify/float.ls?embedname=mehmetify";
 t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);
 </script>
+  <script>
+    $zoho.salesiq.ready = function (embedinfo) {
+        $zoho.salesiq.visitor.customaction("startCustomChat");
+        $zoho.salesiq.visitor.trigger(function (triggername, visitorinfo) {
+            if (triggername == 'startChatNew') {
+                // Chat başlat new visitor mail ve provider
+                console.log("Start Chat with new visitor")
+            }
+            else if (triggername == 'startChatReturning') {
+                // Chat başlat returning visitor ile, mail ve provider
+                console.log("Start Chat with returning visitor");
+            }
+         });
+    }
+  </script>
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
