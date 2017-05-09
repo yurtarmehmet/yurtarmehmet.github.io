@@ -138,7 +138,7 @@ jQuery(document).ready(function(){
             dataType: "json",
             contentType: "application/x-www-form-urlencoded",
             success: function(resultData){
-                console.log(resultData);
+                tokenData = resultData;
             },
           error: function(a,b,c){
            console.log(a,b,c);
