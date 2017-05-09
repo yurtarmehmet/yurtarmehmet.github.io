@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  PANEL EXTERNAL
+  <script>
+  var generatedCode = window.location.search.split("code=")[1];
+  var iframe = document.createElement('iframe');
+  iframe.style.display = "none";
+  iframe.src = "https://panelv2.segmentify.com/ext?auth="+generatedCode+"&nav=on&menu=dashboard,campaigns,trendify,guide&app=mehmet;" 
+  document.body.appendChild(iframe);
+  </script>
+</body>
+</html>
