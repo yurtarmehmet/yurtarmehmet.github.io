@@ -139,6 +139,8 @@ jQuery(document).ready(function(){
             contentType: "application/x-www-form-urlencoded",
             success: function(resultData){
                 tokenData = resultData;
+                var url = "http://mehmetyurtar.me/panel.html?"+access_token;
+                window.open(url,'_blank');
             },
           error: function(a,b,c){
            console.log(a,b,c);
