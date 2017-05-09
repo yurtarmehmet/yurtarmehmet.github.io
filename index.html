@@ -136,7 +136,7 @@ jQuery(document).ready(function(){
             url: "https://panel-api.segmentify.com/token",
             data: JSON.stringify(userData),
             dataType: "json",
-            contentType: "application/json",
+            contentType: "application/x-www-form-urlencoded",
             success: function(resultData){
                 console.log(resultData);
             },
