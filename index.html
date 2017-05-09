@@ -120,5 +120,31 @@ ga('send', 'pageview');
 <!--Javascriptfile start -->
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script>
+<script>
+jQuery(document).ready(function(){
+  if(window.location.search.indexOf("code") !== -1){
+      var generatedCode = window.location.search.split("code=")[1];
+      var userData = {
+        "client_secret" : "cce6769e8a3d93db0ebacdc4a752",
+        "client_id" 	: "0ca4dad86e18",
+        "code"			: generatedCode,
+        "redirect_uri"  : "http://mehmetyurtar.me/",
+        "grant_type"	: "authorization_code" 
+      }; 
+      $.ajax({
+            type: "POST",
+            url: "https://panel-api.segmentify.com/token",
+            data: JSON.stringify(userData),
+            dataType: "json",
+            success: function(resultData){
+                console.log(resultData);
+            },
+          error: function(a,b,c){
+           console.log(a,b,c);
+          }
+      }); 
+  }
+});
+</script>
 </body>
 </html>
