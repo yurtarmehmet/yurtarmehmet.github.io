@@ -90,8 +90,8 @@ ga('send', 'pageview');
       <div class="cb clearfix">
         <h3>About me</h3>
         <p>
-          I am a 23 years old <strong>Frontend Developer</strong> with 2+ years of experience. I'm currently living in <strong>Istanbul</strong>,
-          work as <strong>Customer Success Developer at Segmentify</strong> ( an Istanbul based startup providing solutions for e-commerce and content websites to increase visitor traction ), and majoring in <strong>Mathematics at Yıldız Technical University</strong>. I blog at <a href="https://medium.com/@yurtarmehmet" target="_blank">Medium</a> (mainly about frontend-development and entrepreneurship).
+          I am a 24 years old <strong>Frontend Developer</strong> with 3+ years of experience. I'm currently living in <strong>Istanbul</strong>,
+          work as <strong>Frontend Developer at Segmentify</strong> ( an Istanbul based startup providing solutions for e-commerce and content websites to increase visitor traction ), and majoring in <strong>Mathematics at Yıldız Technical University</strong>. I blog at <a href="https://medium.com/@yurtarmehmet" target="_blank">Medium</a> (mainly about frontend-development and entrepreneurship).
         </p>
       <!--About content start -->
     </div>
@@ -113,41 +113,12 @@ ga('send', 'pageview');
 <!--footer area start-->
 <footer class="footer" style="padding-top:10px; padding-bottom:10px;">
   <div class="container">
-    <p class="copyrightText">mehmet yurtar 2016</p>
+    <p class="copyrightText">mehmet yurtar 2017</p>
   </div>
 </footer>
 <!--footer end-->
 <!--Javascriptfile start -->
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script>
-<script>
-jQuery(document).ready(function(){
-  if(window.location.search.indexOf("code") !== -1){
-      var generatedCode = window.location.search.split("code=")[1];
-      var userData = {
-        "client_secret" : "cce6769e8a3d93db0ebacdc4a752",
-        "client_id" 	: "0ca4dad86e18",
-        "code"			: generatedCode,
-        "redirect_uri"  : "http://mehmetyurtar.me/",
-        "grant_type"	: "authorization_code" 
-      }; 
-      $.ajax({
-            type: "POST",
-            url: "https://panel-api.segmentify.com/token",
-            data: userData,
-            dataType: "json",
-            contentType: "application/x-www-form-urlencoded",
-            success: function(resultData){
-                tokenData = resultData;
-                var url = "http://mehmetyurtar.me/panel.html?code="+resultData.access_token;
-                window.open(url,'_blank');
-            },
-          error: function(a,b,c){
-           console.log(a,b,c);
-          }
-      }); 
-  }
-});
-</script>
 </body>
 </html>
